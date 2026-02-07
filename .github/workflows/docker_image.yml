@@ -26,7 +26,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: DOCKER_USERNAME/dsci310-ia3-shuri011-docker # change to your image
+          images: shuri011/dsci310-ia3-shuri011-docker # change to your image
           tags: |
             type=raw, value={{sha}},enable=${{github.ref_type != 'tag' }}
             type=raw, value=latest
